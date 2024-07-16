@@ -1,0 +1,105 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  color: #0073e6; /* Primary color */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #ff6f61; /* Accent color */
+}
+
+.app-header {
+  background: linear-gradient(135deg, #ff8a65, #ff6f61); /* Header background */
+  color: #ffffff; /* Header text color */
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.app-title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #ffffff; /* Header text color */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* Text shadow */
+  text-align: center;
+}
+
+.export-btn {
+  background: #ff6f61; /* Button background */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px; /* Border radius */
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.export-btn i {
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.export-btn:hover {
+  background: #ff4c40; /* Button hover background */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Box shadow hover */
+}
+
+.export-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.app-main {
+  display: flex;
+  flex: 1;
+  padding: 25px;
+  gap: 25px;
+}
+
+.task-form-section,
+.task-list-section {
+  flex: 1;
+  background: white;
+  border-radius: 12px; /* Border radius */
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+  height: calc(100vh - 130px); /* Adjust height considering header height */
+  overflow-y: auto;
+}
+
+.task-form-section {
+  background: linear-gradient(135deg, #f5f7fa, #dceefb); /* Form section background */
+}
+
+.task-list-section {
+  background: linear-gradient(135deg, #f5f7fa, #e9f5fb); /* List section background */
+}
